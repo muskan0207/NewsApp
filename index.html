@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>NewsApp</title>
+  </head>
+  <body class="">
+    <div class="app">
+      <!-------------------------------------- navbar------------------------->
+      <nav>
+        <div class="main-nav container flex">
+          <a onclick="reload()" href="#">
+            <img class="logo" src="assets/logonews1.png" alt="company logo" />
+          </a>
+
+          <div class="nav-link">
+            <ul class="flex">
+              <li
+                class="hover-link nav-item"
+                id="ipl"
+                onclick="onNavItemClick('ipl')"
+              >
+                IPL
+              </li>
+              <li
+                class="hover-link nav-item"
+                id="finance"
+                onclick="onNavItemClick('finance')"
+              >
+                Finance
+              </li>
+              <li
+                class="hover-link nav-item"
+                id="politics"
+                onclick="onNavItemClick('politics')"
+              >
+                Politics
+              </li>
+              <li
+                class="hover-link nav-item"
+                id="technology"
+                onclick="onNavItemClick('technology')"
+              >
+                Technology
+              </li>
+            </ul>
+          </div>
+          <div>
+          <div class="search-bar flex">
+            <input
+              type="text"
+              id="search-text"
+              class="news-input"
+              placeholder="SEARCH"
+            />
+            <button class="search-button" id="search-button">
+              <i class="search fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dark-mode-toggle">
+          <img src="assets/moon.png" alt="" id="icon">
+        </div>
+        </div>
+        </div>
+      </nav>
+      <!------------------------------main body-------------------------------->
+      <main>
+        <div class="cards-container container flex" id="cards-container"></div>
+      </main>
+      <!-- <div class="card">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/400x200"
+                alt="news-img"
+                id="newsimg"
+              />
+            </div>
+            <div class="card-content">
+              <h3 id="news-title">This is the Title</h3>
+              <h6 class="news-source" id="news-source">End Gadget 25/12/2024</h6>
+              <p class="news-desc" id="news-desc" >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis possimus dolore vitae nobis cum facere laborum
+                quaerat magnam deserunt atque.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/400x200"
+                alt="news-img"
+                id="newsimg"
+              />
+            </div>
+            <div class="card-content">
+              <h3 id="news-title">This is the Title</h3>
+              <h6 class="news-source" id="news-source">End Gadget 25/12/2024</h6>
+              <p class="news-desc" id="news-desc" >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis possimus dolore vitae nobis cum facere laborum
+                quaerat magnam deserunt atque.
+              </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/400x200"
+                alt="news-img"
+                id="newsimg"
+              />
+            </div>
+            <div class="card-content">
+              <h3 id="news-title">This is the Title</h3>
+              <h6 class="news-source" id="news-source">End Gadget 25/12/2024</h6>
+              <p class="news-desc" id="news-desc" >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis possimus dolore vitae nobis cum facere laborum
+                quaerat magnam deserunt atque.
+              </p>
+            </div>
+          </div>
+          
+ -->
+
+      <template id="template-news-card">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="news-img"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 25/12/2024</h6>
+            <p class="news-desc" id="news-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis possimus dolore vitae nobis cum facere laborum quaerat
+              magnam deserunt atque.
+            </p>
+          </div>
+        </div>
+      </template>
+
+      <footer>
+        <div class="footer"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
